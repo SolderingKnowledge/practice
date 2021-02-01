@@ -4,9 +4,6 @@ import TextField from "@material-ui/core/TextField";
 
 const MyCustom = withStyles({
   root: {
-    // "& .MuiInput-underline:after": {
-    //   borderBottomColor: "orange"
-    // },
     "& .MuiOutlinedInput-root": {
       "& fieldset": {
         borderColor: "blue"
@@ -35,13 +32,13 @@ export default function App() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root} noValidate>
+    // <div className={classes.root} noValidate>
       <MyCustom
-        className={classes.margin}
-        label="Custom 1"
+        // className={classes.margin}
+        label="Oi"
         variant="outlined"
         id="myId"
       />
-    </div>
+    // </div>
   );
 }
